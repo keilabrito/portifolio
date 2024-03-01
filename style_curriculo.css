@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 0px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+header a {
+    transition: .03s;
+    display: inline-block;
+    text-decoration: none;
+    color: #7d7d7d
+}
+
+header a:hover {
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    
+}
+
+/*Estilo Menu MOBILE*/
+
+.btn_abrir_menu {
+    color: #daa520;
+}
+
+.menu_mobile {
+    background-color: black;
+    height: 100vh;
+    position: fixed ;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+    display: block;
+}
+
+.menu_mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu_mobile.abrir-menu ~ .overlay_menu {
+    display: block;
+}
+
+.overlay_menu {
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.menu_mobile nav ul {
+    text-align: right;
+}
+
+.menu_mobile nav ul li a {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu_mobile nav ul li a:hover {
+    background-color: #daa520;
+    color: black;
+    font-weight: 600;
+}
+
+.btn_fechar_btn {
+    padding: 20px 4%;
+    width: 50px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #daa520;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #daa520b2;
+}
+
+.logo_img {
+    width: 200px
+}
+
+
+.especialidades {
+    padding: 50px 5%; 
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    gap:10%;
+}
+
+.especialidades_box {
+    padding: 38px 3%;
+    border: solid #daa520;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px #daa520b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.especialidades_titulo {
+    padding: 10px 5px; 
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.especialidades_subtitulo {
+  text-align: center;
+}
+
+.especialidades_box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.flex {
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    width: 450px;
+}
+
+.dados_pessoais {
+    color: aliceblue;
+    text-align: center;
+}
+
+.dados_pessoais {
+    font-size: 35px;
+}
+
+.span {
+    color: #daa520;
+}
+.apresentacao__links {
+    display: flex;
+    color: aliceblue;
+}
+
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    padding: 40px 0px;
+    background-color: #daa520b2;
+    color:#daa520b2
+}
+
+footer a {
+    transition: .03s;
+    display: inline-block;
+    text-decoration: none;
+    color: #daa520b2
+}
+
+footer a:hover {
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+footer nav ul{
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    
+}
+
+footer > .interface {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px 5%;
+}
+
+.titulo_titulo {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo_titulo:hover{
+    color: aliceblue;
+    transform: scale(1.05);
+}    
+
+@media screen and (max-width: 1020px){
+    
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+    
+    .flex {
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .especialidades {
+        padding: 50px 5%; 
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+    }
+
+    .especialidades_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .dados_pessoais {
+        font-size: 28px;
+    }
+    
+    .imagem {
+        width: 350px;
+    }
+
+}

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2.titulo{
+    color: aliceblue;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #daa520;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header a {
+    transition: .03s;
+    display: inline-block;
+    text-decoration: none;
+    color: #7d7d7d
+}
+
+header a:hover {
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #daa520;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #daa520b2;
+}
+
+/*Estilo Menu MOBILE*/
+
+.btn_abrir_menu {
+    color: #daa520;
+}
+
+.menu_mobile {
+    background-color: black;
+    height: 100vh;
+    position: fixed ;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.menu_mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu_mobile.abrir-menu ~ .overlay_menu {
+    display: block;
+}
+
+.overlay_menu {
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.menu_mobile nav ul {
+    text-align: right;
+}
+
+.menu_mobile nav ul li a {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+}
+
+.menu_mobile nav ul li a:hover {
+    background-color: #daa520;
+    color: black;
+    font-weight: 600;
+}
+
+.btn_fechar_btn {
+    padding: 20px 4%;
+    width: 50px;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    color: aliceblue;
+}
+
+.apresentacao_conteudo {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.conteudo_site {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.txt_conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.txt_conteudo_p {
+    font-size: 25px;
+}
+.h1 {
+    color: #daa520;
+}
+
+.imagem {
+    border-radius: 10%;
+    height: 450px;
+    border: 2px solid #daa520; 
+}
+
+.logo_img {
+    width: 200px
+}
+
+
+.flex {
+    padding: 50px 5%; 
+    display: flex;
+    color: aliceblue;
+    gap:10%;
+}
+
+.especialidades_box{
+    padding: 38px 3%;
+    border: solid #daa520;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px #daa520b2;
+}
+
+.especialidades_box:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.especialidades_titulo {
+    padding: 10px 5px; 
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.icones {
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones_texto {
+    padding: 10px 5px;
+}
+
+footer {
+    padding: 40px 0px;
+    background-color: #daa520b2;
+    color:#daa520b2
+}
+
+footer a {
+    transition: .03s;
+    display: inline-block;
+    text-decoration: none;
+    color: #daa520b2
+}
+
+footer a:hover {
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+footer nav ul{
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    
+}
+
+footer > .interface {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px 5%;
+}
+
+.titulo_titulo {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo_titulo:hover{
+    color: aliceblue;
+    transform: scale(1.05);
+}    
+
+@media screen and (max-width: 1020px){
+    
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+    .flex {
+     flex-direction: column;
+     gap: 50px;
+    }
+
+    .conteudo_site {
+        flex-direction: column-reverse;
+    }
+
+    .imagem {
+      height: 300px;     
+    }
+}
